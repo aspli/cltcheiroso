@@ -122,7 +122,7 @@ for index, link in enumerate(links, 1):
         quantidade_reviews = extrair_quantidade_avaliacoes(produto_id)
         
         # Calcula as Vendas Estimadas na hora (ex: 1 review = 25 vendas)
-        FATOR_MULTIPLICADOR = 25
+        FATOR_MULTIPLICADOR = 5
         vendas_estimadas = quantidade_reviews * FATOR_MULTIPLICADOR
         
         print(f"   ID: {produto_id} | Avaliações: {quantidade_reviews} | Vendas Estimadas: {vendas_estimadas}")
